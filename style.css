@@ -1,0 +1,50 @@
+.container {
+	margin: 50px auto;
+	border: 2px solid black;
+	width: 600px;
+	height: 800px;
+	position: relative;
+}
+
+.box {
+	width: 60px;
+	height: 40px;
+	background-color: #4d0b61;
+	position: absolute;
+	left: 270px;
+	top: 0;
+	animation: anim 2s linear infinite;
+}
+
+@keyframes anim {
+	20% {
+		left: 270px;
+		top: 0;
+		transform: scale(1.1, 1.1);
+		background-color: #440537;
+	}
+	40% {
+		left: 550px;
+		top: 370px;
+		transform: scale(1.2, 1.2);
+		background-color: #a5288c;
+	}
+	60% {
+		left: 270px;
+		top: 750px;
+		transform: scale(1.1, 1.1);
+		background-color: #c07ab2;
+	}
+	80% {
+		left: 0;
+		top: 370px;
+		transform: scale(1, 1);
+		background-color: #626062;
+	}
+	100% {
+		left: 270px;
+		top: 0;
+		transform: scale(1.1, 1.1);
+		background-color: #440537;
+	}
+}
